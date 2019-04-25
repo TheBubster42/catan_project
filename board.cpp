@@ -1,6 +1,18 @@
 #include "board.h"
 
 // TODO: Add set commands.
+void Card::setBiome(BiomeType b) {
+    biome = b;
+}
+void Card::setNumber(int n) {
+    number = n;
+}
+BiomeType Card::getBiome() {
+    return biome;
+}
+int Card::getNumber() {
+    return number;
+}
 
 // Default Card
 string Card::render(int line){
